@@ -1,0 +1,28 @@
+<!--  Featured Events First Row -->
+
+  <div class="container">
+    <div class="row">
+
+
+      <div class="col s3" ng-repeat="event in MongoStuff">
+        <div class="card">
+          <div class="card-image">
+            <img src="http://www.smokymountainvacationinfo.com/images/national-park-images/hiking.jpg">
+            <span class="card-title">{{ event.title }}</span>
+          </div>
+          <div class="card-content">
+            <p>{{ event.description }}</p>
+          </div>
+          <div class="card-action">
+            <p>For more information or to join the adventure, please press button below.</p>
+            <a ui-sref="moreInformation">More Information <i class="fa fa-info fa-1x"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+    
+     
+    <div ui-view></div>
