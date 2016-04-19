@@ -26,6 +26,7 @@ app.get('/', (req, res) => {
 
 app.get('/events', (req, res) => {
 	db.collection('events').find({}).toArray(function(err, results) {
+    // console.log(results);
 		res.json(results);
 	});
 });
